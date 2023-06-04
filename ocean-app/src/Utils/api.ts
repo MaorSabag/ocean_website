@@ -1,8 +1,10 @@
 import axios from 'axios'
 import { METHOD } from '../Models/index'
 
+const BACKEND_SERVER = process.env.REACT_APP_DEVELOPMENT === "true" ? process.env.REACT_APP_BACKEND_DEV : process.env.REACT_APP_BACKEND_PROD
+
 const sendRequest = async (method: METHOD, routing: string, body?: any) => {
-    const URL = `https://api.blunun.com${routing}`;
+    const URL = `${BACKEND_SERVER}${routing}`;
     let response: any = null;
   
     switch (method) {

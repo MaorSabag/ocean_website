@@ -20,7 +20,7 @@ func GetRoutes() http.Handler {
 	router.HandleFunc("/database", getDatabase).Methods("GET")
 
 	controller := handlers.CORS(
-		handlers.AllowedOrigins([]string{"https://*.blunun.com"}),
+		handlers.AllowedOrigins([]string{"*"}),
 		handlers.AllowedHeaders([]string{"GET", "POST", "OPTIONS"}),
 		handlers.AllowedHeaders([]string{"Content-Type"}),
 	)(router)
