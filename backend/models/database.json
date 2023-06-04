@@ -1,0 +1,26 @@
+[
+    {
+        "Name": "SafeCrypt",
+        "Language": "Golang",
+        "Stars": 1,
+        "Description": "Just Another ransomware in Golang",
+        "Link": "https://github.com/MaorSabag/SafeCrypt",
+        "NumOfLikes": 0
+    },
+    {
+        "Name": "SideLoadingDLL",
+        "Language": "C",
+        "Stars": 52,
+        "Description": "Do some DLL SideLoading magic",
+        "Link": "https://github.com/MaorSabag/SideLoadingDLL",
+        "NumOfLikes": 49
+    },{
+        "Name": "Paruns-Fart",
+        "Language": "C++",
+        "Stars": 64,
+        "Description": "Just another ntdll unhooking using Parun's Fart technique",
+        "Link": "https://github.com/MaorSabag/SideLoadingDLL",
+        "NumOfLikes": 64
+    }
+    
+]
