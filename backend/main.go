@@ -24,4 +24,30 @@ func main() {
 		os.Exit(1)
 	}
 
+	// maorGithub := util.GithubParse{
+	// 	Url: "https://github.com/maorsabag",
+	// }
+	// body, err := maorGithub.ParseUrl("/sideLoadingDLL")
+	// if err != nil {
+	// 	panic(err)
+	// }
+	// fmt.Println(body)
+
+	// hrefs, err := maorGithub.GetHrefs("/sideLoadingDLL")
+	// if err != nil {
+	// 	panic(err)
+	// }
+	// fmt.Println(strings.Join(hrefs, ", "))
+	// stars, err := maorGithub.GetStars("/sideLoadingDLL")
+	// if err != nil {
+	// 	panic(err)
+	// }
+	// fmt.Println("Stars ", stars)
+
+	// languages, err := maorGithub.GetLanguages("/sideLoadingDLL")
+	// if err != nil {
+	// 	panic(err)
+	// }
+	// fmt.Println(languages)
+
 }

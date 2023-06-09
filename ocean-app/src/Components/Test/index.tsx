@@ -115,7 +115,7 @@ const Repos = () => {
   return (
     <div>
       <div>
-        <Background 
+        <Background
           handleSearch={handleSearch}
         />
       </div>

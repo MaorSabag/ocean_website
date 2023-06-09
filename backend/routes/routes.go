@@ -17,7 +17,7 @@ func GetRoutes() http.Handler {
 	router := mux.NewRouter()
 
 	router.HandleFunc("/", testData).Methods("GET")
-	router.HandleFunc("/database", getDatabase).Methods("GET")
+	router.HandleFunc("/repositories", getDatabase).Methods("GET")
 
 	controller := handlers.CORS(
 		handlers.AllowedOrigins([]string{"*"}),
