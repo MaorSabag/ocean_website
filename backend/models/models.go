@@ -10,3 +10,8 @@ type Repository struct {
 }
 
 type Database []Repository
+
+type GithubParse struct {
+	Url          string
+	Repositories Database
+}
