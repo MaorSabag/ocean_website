@@ -10,6 +10,7 @@ const App = () => {
         <Route path="/meme" element={<MemeGenerator />} />
         <Route path="/" element={<AllRepos />} />
         <Route path="/test" element={<Home />} />
+        <Route path="*" element={<Home />} />
       </Routes>
     </Router>
   );
