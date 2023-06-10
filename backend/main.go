@@ -6,11 +6,13 @@ import (
 	"log"
 	"net/http"
 	"ocean_backend/routes"
+	"ocean_backend/util"
 	"os"
 )
 
 func main() {
 	fmt.Println("Hello World!")
+	go util.ScanGithub()
 
 	log.Println("Started serving backend server at http://localhost:1122")
 	router := routes.GetRoutes()
@@ -23,31 +25,5 @@ func main() {
 		log.Printf("Error starting server %v\n", err)
 		os.Exit(1)
 	}
-
-	// maorGithub := util.GithubParse{
-	// 	Url: "https://github.com/maorsabag",
-	// }
-	// body, err := maorGithub.ParseUrl("/sideLoadingDLL")
-	// if err != nil {
-	// 	panic(err)
-	// }
-	// fmt.Println(body)
-
-	// hrefs, err := maorGithub.GetHrefs("/sideLoadingDLL")
-	// if err != nil {
-	// 	panic(err)
-	// }
-	// fmt.Println(strings.Join(hrefs, ", "))
-	// stars, err := maorGithub.GetStars("/sideLoadingDLL")
-	// if err != nil {
-	// 	panic(err)
-	// }
-	// fmt.Println("Stars ", stars)
-
-	// languages, err := maorGithub.GetLanguages("/sideLoadingDLL")
-	// if err != nil {
-	// 	panic(err)
-	// }
-	// fmt.Println(languages)
 
 }

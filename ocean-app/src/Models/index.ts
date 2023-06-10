@@ -10,7 +10,6 @@ export type Repository = {
     Stars: Number,
     Description: String,
     Link: String
-    NumOfLikes: Number
 }
 
 export type errorMessage = {

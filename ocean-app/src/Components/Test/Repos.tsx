@@ -103,7 +103,6 @@ export const Repos = () => {
                       Language={repo.Language}
                       Link={repo.Link}
                       Name={repo.Name}
-                      NumOfLikes={repo.NumOfLikes}
                       Stars={repo.Stars}
                     />
                   <br/>

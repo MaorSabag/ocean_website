@@ -55,9 +55,7 @@ export const RepoCard = (props: Repository) => {
             Numer of ⭐'s {props.Stars.toString()}
           </Typography>
           <Divider orientation="vertical" />
-          <Typography level="body3" sx={{ fontWeight: 'md', color: 'text.secondary' }}>
-            Num of Likes {props.NumOfLikes.toString()}
-          </Typography>
+
         </CardOverflow>
         </Card>
       </div>

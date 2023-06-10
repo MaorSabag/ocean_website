@@ -6,7 +6,6 @@ type Repository struct {
 	Stars       int    `json:"Stars"`
 	Description string `json:"Description"`
 	Link        string `json:"Link"`
-	NumOfLikes  int    `json:"NumOfLikes"`
 }
 
 type Database []Repository
