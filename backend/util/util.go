@@ -16,10 +16,13 @@ func GetPath() string {
 	return CurrentPath
 }
 
-func GetDatabaseFile() (models.Database, error) {
+func GetDatabaseFile(filename string) (models.Database, error) {
 
+	if filename == "" {
+		filename = "database"
+	}
 	currentDir := GetPath()
-	databaseFolder := currentDir + "/models/database.json"
+	databaseFolder := currentDir + fmt.Sprintf("/models/%s.json", filename)
 
 	jsonDatabaseFile, err := os.ReadFile(databaseFolder)
 	if err != nil {

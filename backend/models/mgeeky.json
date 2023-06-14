@@ -1,0 +1,178 @@
+[
+  {
+    "Name": "RedWarden",
+    "Language": "Could not find languages",
+    "Stars": 0,
+    "Description": "Could not get description",
+    "Link": "",
+    "ReleaseDate": "Could not get release date"
+  },
+  {
+    "Name": "decode-spam-headers",
+    "Language": "Could not find languages",
+    "Stars": 0,
+    "Description": "Could not get description",
+    "Link": "",
+    "ReleaseDate": "Could not get release date"
+  },
+  {
+    "Name": "ThreadStackSpoofer",
+    "Language": "C++",
+    "Stars": 0,
+    "Description": "Could not get description",
+    "Link": "",
+    "ReleaseDate": "Could not get release date"
+  },
+  {
+    "Name": "mgeeky",
+    "Language": "",
+    "Stars": 0,
+    "Description": "Could not get description",
+    "Link": "",
+    "ReleaseDate": "Could not get release date"
+  },
+  {
+    "Name": "cobalt-arsenal",
+    "Language": "PowerShell, Python",
+    "Stars": 0,
+    "Description": "Could not get description",
+    "Link": "",
+    "ReleaseDate": "Could not get release date"
+  },
+  {
+    "Name": "SharpWebServer",
+    "Language": "C#",
+    "Stars": 0,
+    "Description": "Could not get description",
+    "Link": "",
+    "ReleaseDate": "Could not get release date"
+  },
+  {
+    "Name": "Penetration-Testing-Tools",
+    "Language": "PowerShell, Python, Shell, Ruby, VBScript, C++, Other",
+    "Stars": 0,
+    "Description": "Could not get description",
+    "Link": "",
+    "ReleaseDate": "Could not get release date"
+  },
+  {
+    "Name": "expdevBadChars",
+    "Language": "Python",
+    "Stars": 0,
+    "Description": "Could not get description",
+    "Link": "",
+    "ReleaseDate": "Could not get release date"
+  },
+  {
+    "Name": "Exploit-Development-Tools",
+    "Language": "Python, Assembly, C, Shell",
+    "Stars": 0,
+    "Description": "Could not get description",
+    "Link": "",
+    "ReleaseDate": "Could not get release date"
+  },
+  {
+    "Name": "msidump",
+    "Language": "Python",
+    "Stars": 0,
+    "Description": "Could not get description",
+    "Link": "",
+    "ReleaseDate": "Could not get release date"
+  },
+  {
+    "Name": "PackMyPayload",
+    "Language": "Python, PowerShell",
+    "Stars": 0,
+    "Description": "Could not get description",
+    "Link": "",
+    "ReleaseDate": "Could not get release date"
+  },
+  {
+    "Name": "tomcatWarDeployer",
+    "Language": "Python",
+    "Stars": 0,
+    "Description": "Could not get description",
+    "Link": "",
+    "ReleaseDate": "Could not get release date"
+  },
+  {
+    "Name": "CustomXMLPart",
+    "Language": "VBA",
+    "Stars": 0,
+    "Description": "Could not get description",
+    "Link": "",
+    "ReleaseDate": "Could not get release date"
+  },
+  {
+    "Name": "UnhookMe",
+    "Language": "C++, C",
+    "Stars": 0,
+    "Description": "Could not get description",
+    "Link": "",
+    "ReleaseDate": "Could not get release date"
+  },
+  {
+    "Name": "msi-shenanigans",
+    "Language": "Python, PowerShell, Other",
+    "Stars": 0,
+    "Description": "Could not get description",
+    "Link": "",
+    "ReleaseDate": "Could not get release date"
+  },
+  {
+    "Name": "ProtectMyTooling",
+    "Language": "PowerShell, Assembly, Python, PHP, HTML, Roff, Other",
+    "Stars": 0,
+    "Description": "Could not get description",
+    "Link": "",
+    "ReleaseDate": "Could not get release date"
+  },
+  {
+    "Name": "ShellcodeFluctuation",
+    "Language": "C++",
+    "Stars": 0,
+    "Description": "Could not get description",
+    "Link": "",
+    "ReleaseDate": "Could not get release date"
+  },
+  {
+    "Name": "PE-library",
+    "Language": "C++, C",
+    "Stars": 0,
+    "Description": "Could not get description",
+    "Link": "",
+    "ReleaseDate": "Could not get release date"
+  },
+  {
+    "Name": "ElusiveMice",
+    "Language": "C, Makefile",
+    "Stars": 0,
+    "Description": "Could not get description",
+    "Link": "",
+    "ReleaseDate": "Could not get release date"
+  },
+  {
+    "Name": "AzureRT",
+    "Language": "PowerShell",
+    "Stars": 0,
+    "Description": "Could not get description",
+    "Link": "",
+    "ReleaseDate": "Could not get release date"
+  },
+  {
+    "Name": "Stracciatella",
+    "Language": "C#, Other",
+    "Stars": 0,
+    "Description": "Could not get description",
+    "Link": "",
+    "ReleaseDate": "Could not get release date"
+  },
+  {
+    "Name": "digitalocean-app-redirector",
+    "Language": "Python",
+    "Stars": 0,
+    "Description": "Could not get description",
+    "Link": "",
+    "ReleaseDate": "Could not get release date"
+  }
+]

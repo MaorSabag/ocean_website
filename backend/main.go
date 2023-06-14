@@ -12,7 +12,7 @@ import (
 
 func main() {
 	fmt.Println("Hello World!")
-	go util.ScanGithub()
+	go util.ScanGithub("")
 
 	log.Println("Started serving backend server at http://localhost:1122")
 	router := routes.GetRoutes()

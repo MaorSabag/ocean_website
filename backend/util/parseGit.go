@@ -7,6 +7,7 @@ import (
 	"os"
 	"strconv"
 	"strings"
+	"sync"
 
 	"github.com/gocolly/colly"
 )
@@ -151,51 +152,105 @@ func (g *GithubParse) GetRepos() ([]string, error) {
 	return repositories, nil
 }
 
-func ScanGithub() {
+func (g *GithubParse) GetReleaseDate(endpoint string) (string, error) {
+
+	c := colly.NewCollector()
+
+	var releaseDates []string
+	c.OnHTML("h2.f5.text-normal", func(e *colly.HTMLElement) {
+		releaseDates = append(releaseDates, e.Text)
+	})
+
+	uri := fmt.Sprintf("%s%s/commits/main", g.Url, endpoint)
+	fmt.Printf("Sending get request to %s\n", uri)
+	err := c.Visit(uri)
+	if err != nil {
+		fmt.Println("Error occur, ", err)
+		return "", err
+	}
+	var lastReleaseDate string
+	if len(releaseDates) > 0 {
+		lastReleaseDate = strings.Trim(releaseDates[len(releaseDates)-1], "Commits on")
+	} else {
+		lastReleaseDate = ""
+	}
+
+	return lastReleaseDate, nil
+}
+
+func ScanGithub(username string) (bool, error) {
+	if username == "" {
+		username = "maorsabag"
+	}
 	maorGithub := GithubParse{
-		Url: "https://github.com/maorsabag",
+		Url: fmt.Sprintf("https://github.com/%s", username),
 	}
 
 	repos, err := maorGithub.GetRepos()
 	if err != nil {
-		panic(err)
+		return false, err
 	}
 
-	for _, repoName := range repos {
-		var repo models.Repository
-		repo.Name = repoName
+	var wg sync.WaitGroup
 
-		repoEndpoint := fmt.Sprintf("/%s", repoName)
+	wg.Add(len(repos))
 
-		languages, err := maorGithub.GetLanguages(repoEndpoint)
-		if err != nil {
-			panic(err)
-		}
-		allLanguages := strings.Trim(strings.Join(languages, ", "), ", ")
-		// fmt.Println(allLanguages)
-		repo.Languange = allLanguages
+	for i := 0; i < len(repos); i++ {
+		go func(i int) {
+			defer wg.Done()
+			var repo models.Repository
+			repo.Name = repos[i]
 
-		repoDescription, err := maorGithub.GetDescription(repoEndpoint)
-		if err != nil {
-			panic(err)
-		}
-		repoDescription = strings.TrimSpace(repoDescription)
-		// fmt.Println(repoDescription)
-		repo.Description = repoDescription
+			repoEndpoint := fmt.Sprintf("/%s", repo.Name)
 
-		stars, err := maorGithub.GetStars(repoEndpoint)
-		if err != nil {
-			panic(err)
-		}
-		// fmt.Println(stars)
-		repo.Stars, _ = strconv.Atoi(stars)
+			languages, err := maorGithub.GetLanguages(repoEndpoint)
+			if err != nil {
+				repo.Languange = "Could not find languages"
+			} else {
+				allLanguages := strings.Trim(strings.Join(languages, ", "), ", ")
+				repo.Languange = allLanguages
+			}
 
-		repo.Link = fmt.Sprintf("%s%s", maorGithub.Url, repoEndpoint)
+			repoDescription, err := maorGithub.GetDescription(repoEndpoint)
+			if err != nil {
+				repo.Description = "Could not get description"
+			} else {
+				repoDescription = strings.TrimSpace(repoDescription)
+				repo.Description = repoDescription
 
-		maorGithub.Repositories = append(maorGithub.Repositories, repo)
+			}
+
+			stars, err := maorGithub.GetStars(repoEndpoint)
+			if err != nil {
+				repo.Stars = 0
+			} else {
+				repo.Stars, _ = strconv.Atoi(stars)
+
+			}
+
+			releaseDate, err := maorGithub.GetReleaseDate(repoEndpoint)
+			if err != nil {
+				repo.ReleaseDate = "Could not get release date"
+			} else {
+				repo.ReleaseDate = releaseDate
+				repo.Link = fmt.Sprintf("%s%s", maorGithub.Url, repoEndpoint)
+
+			}
+
+			maorGithub.Repositories = append(maorGithub.Repositories, repo)
+		}(i)
 	}
+	wg.Wait()
 	fileContent, _ := json.Marshal(maorGithub.Repositories)
 
-	databasePath := GetPath() + "/models/database.json"
-	os.WriteFile(databasePath, fileContent, 0644)
+	databasePath := GetPath() + fmt.Sprintf("/models/%s.json", username)
+	err = os.WriteFile(databasePath, fileContent, 0644)
+	if err != nil {
+		fmt.Printf("Error writing to %s.json!\n", username)
+		return false, err
+	}
+	fmt.Printf("Wrote database.json\n%d repositories were written\n", len(maorGithub.Repositories))
+
+	return true, nil
+
 }

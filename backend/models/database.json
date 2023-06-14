@@ -1,1 +1,106 @@
-[{"Name":"ocean_website","Language":"TypeScript, Go, CSS, JavaScript, HTML","Stars":0,"Description":"My code of the blunun.com website!","Link":"https://github.com/maorsabag/ocean_website"},{"Name":"HollowMask","Language":"Python, C++, C, Other","Stars":7,"Description":"","Link":"https://github.com/maorsabag/HollowMask"},{"Name":"SideLoadingDLL","Language":"C, Python, Assembly","Stars":52,"Description":"Do some DLL SideLoading magic","Link":"https://github.com/maorsabag/SideLoadingDLL"},{"Name":"Paruns-Fart","Language":"C++, C, Assembly, Python, Makefile","Stars":64,"Description":"Just another ntdll unhooking using Parun's Fart technique","Link":"https://github.com/maorsabag/Paruns-Fart"},{"Name":"LoaderInjector","Language":"C, C++, Python","Stars":13,"Description":"","Link":"https://github.com/maorsabag/LoaderInjector"},{"Name":"upload_file_flask","Language":"Python","Stars":0,"Description":"This is a POC of file transfer via Base64 encode through browser","Link":"https://github.com/maorsabag/upload_file_flask"},{"Name":"telegram-bot","Language":"Python","Stars":1,"Description":"","Link":"https://github.com/maorsabag/telegram-bot"},{"Name":"YouTube-Downloader","Language":"Python","Stars":1,"Description":"A python script to download mp4 youtube video to you downloads directory.","Link":"https://github.com/maorsabag/YouTube-Downloader"},{"Name":"Python-Rootkit","Language":"Python","Stars":3,"Description":"A simple Python-Rootkit script","Link":"https://github.com/maorsabag/Python-Rootkit"},{"Name":"Ransomware","Language":"Python","Stars":0,"Description":"A ransomware python script","Link":"https://github.com/maorsabag/Ransomware"},{"Name":"Steganography-LSB","Language":"Python","Stars":0,"Description":"","Link":"https://github.com/maorsabag/Steganography-LSB"},{"Name":"FTP-Bot","Language":"Python","Stars":0,"Description":"A python script to check if anonymous login is enabled or tries to bruteforce the ftp service","Link":"https://github.com/maorsabag/FTP-Bot"},{"Name":"Lsass-Automation","Language":"Python","Stars":2,"Description":"A python script to automate the NTLM hash dumping form the Lsass process","Link":"https://github.com/maorsabag/Lsass-Automation"}]
+[
+  {
+    "Name": "telegram-bot",
+    "Language": "Python",
+    "Stars": 1,
+    "Description": "",
+    "Link": "https://github.com/maorsabag/telegram-bot",
+    "ReleaseDate": "Jan 26, 2022"
+  },
+  {
+    "Name": "Lsass-Automation",
+    "Language": "Python",
+    "Stars": 2,
+    "Description": "A python script to automate the NTLM hash dumping form the Lsass process",
+    "Link": "https://github.com/maorsabag/Lsass-Automation",
+    "ReleaseDate": "Dec 13, 2020"
+  },
+  {
+    "Name": "YouTube-Downloader",
+    "Language": "Python",
+    "Stars": 1,
+    "Description": "A python script to download mp4 youtube video to you downloads directory.",
+    "Link": "https://github.com/maorsabag/YouTube-Downloader",
+    "ReleaseDate": "Jan 16, 2021"
+  },
+  {
+    "Name": "SideLoadingDLL",
+    "Language": "C, Python, Assembly",
+    "Stars": 52,
+    "Description": "Do some DLL SideLoading magic",
+    "Link": "https://github.com/maorsabag/SideLoadingDLL",
+    "ReleaseDate": "Oct 8, 2022"
+  },
+  {
+    "Name": "Ransomware",
+    "Language": "Python",
+    "Stars": 0,
+    "Description": "A ransomware python script",
+    "Link": "https://github.com/maorsabag/Ransomware",
+    "ReleaseDate": "Dec 13, 2020"
+  },
+  {
+    "Name": "upload_file_flask",
+    "Language": "Python",
+    "Stars": 0,
+    "Description": "This is a POC of file transfer via Base64 encode through browser",
+    "Link": "https://github.com/maorsabag/upload_file_flask",
+    "ReleaseDate": "Aug 11, 2022"
+  },
+  {
+    "Name": "HollowMask",
+    "Language": "Python, C++, C, Other",
+    "Stars": 7,
+    "Description": "Just another Process Injection using Process Hollowing technique.",
+    "Link": "https://github.com/maorsabag/HollowMask",
+    "ReleaseDate": "May 24, 2023"
+  },
+  {
+    "Name": "Steganography-LSB",
+    "Language": "Python",
+    "Stars": 0,
+    "Description": "",
+    "Link": "https://github.com/maorsabag/Steganography-LSB",
+    "ReleaseDate": "May 7, 2021"
+  },
+  {
+    "Name": "LoaderInjector",
+    "Language": "C, C++, Python",
+    "Stars": 13,
+    "Description": "",
+    "Link": "https://github.com/maorsabag/LoaderInjector",
+    "ReleaseDate": "Oct 31, 2022"
+  },
+  {
+    "Name": "Python-Rootkit",
+    "Language": "Python",
+    "Stars": 3,
+    "Description": "A simple Python-Rootkit script",
+    "Link": "https://github.com/maorsabag/Python-Rootkit",
+    "ReleaseDate": "Aug 5, 2021"
+  },
+  {
+    "Name": "FTP-Bot",
+    "Language": "Python",
+    "Stars": 0,
+    "Description": "A python script to check if anonymous login is enabled or tries to bruteforce the ftp service",
+    "Link": "https://github.com/maorsabag/FTP-Bot",
+    "ReleaseDate": "Dec 21, 2020"
+  },
+  {
+    "Name": "Paruns-Fart",
+    "Language": "C++, C, Assembly, Python, Makefile",
+    "Stars": 64,
+    "Description": "Just another ntdll unhooking using Parun's Fart technique",
+    "Link": "https://github.com/maorsabag/Paruns-Fart",
+    "ReleaseDate": "Feb 14, 2023"
+  },
+  {
+    "Name": "ocean_website",
+    "Language": "TypeScript, Go, CSS, JavaScript, HTML",
+    "Stars": 0,
+    "Description": "My code of the blunun.com website!",
+    "Link": "https://github.com/maorsabag/ocean_website",
+    "ReleaseDate": "Jun 4, 2023"
+  }
+]

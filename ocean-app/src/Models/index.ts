@@ -9,12 +9,13 @@ export type Repository = {
     Language: String,
     Stars: Number,
     Description: String,
-    Link: String
+    Link: String,
+    ReleaseDate: Date
 }
+
+export type Repositories = Array<Repository>
 
 export type errorMessage = {
     Error: String,
     Status: String
 }
-
-export type Database = Array<Repository>

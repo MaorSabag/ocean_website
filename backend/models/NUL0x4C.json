@@ -1,0 +1,162 @@
+[
+  {
+    "Name": "APCLdr",
+    "Language": "C, Assembly",
+    "Stars": 265,
+    "Description": "Payload Loader With Evasion Features",
+    "Link": "https://github.com/NUL0x4C/APCLdr",
+    "ReleaseDate": "Jan 21, 2023"
+  },
+  {
+    "Name": "AtomLdr",
+    "Language": "C, Assembly",
+    "Stars": 472,
+    "Description": "A DLL loader with advanced evasive features",
+    "Link": "https://github.com/NUL0x4C/AtomLdr",
+    "ReleaseDate": "Feb 26, 2023"
+  },
+  {
+    "Name": "NUL0x4C",
+    "Language": "",
+    "Stars": 0,
+    "Description": "",
+    "Link": "https://github.com/NUL0x4C/NUL0x4C",
+    "ReleaseDate": "Aug 16, 2022"
+  },
+  {
+    "Name": "TerraLdr",
+    "Language": "C",
+    "Stars": 472,
+    "Description": "A Payload Loader Designed With Advanced Evasion Features",
+    "Link": "https://github.com/NUL0x4C/TerraLdr",
+    "ReleaseDate": "Oct 29, 2022"
+  },
+  {
+    "Name": "AsmLogger",
+    "Language": "Assembly, C",
+    "Stars": 4,
+    "Description": "asm keylogger that handles special characters and writes to a file",
+    "Link": "https://github.com/NUL0x4C/AsmLogger",
+    "ReleaseDate": "Aug 15, 2022"
+  },
+  {
+    "Name": "EtwSessionHijacking",
+    "Language": "C++",
+    "Stars": 97,
+    "Description": "A Poc on blocking Procmon from monitoring network events",
+    "Link": "https://github.com/NUL0x4C/EtwSessionHijacking",
+    "ReleaseDate": "Aug 23, 2022"
+  },
+  {
+    "Name": "HellShell",
+    "Language": "C, C++",
+    "Stars": 38,
+    "Description": "transform your payload into ipv4/ipv6/mac arrays",
+    "Link": "https://github.com/NUL0x4C/HellShell",
+    "ReleaseDate": "Aug 15, 2022"
+  },
+  {
+    "Name": "PerunsFart",
+    "Language": "C",
+    "Stars": 6,
+    "Description": "replace and unhook ntdll from a suspended process",
+    "Link": "https://github.com/NUL0x4C/PerunsFart",
+    "ReleaseDate": "Aug 15, 2022"
+  },
+  {
+    "Name": "ToasterLoader",
+    "Language": "C++, C",
+    "Stars": 6,
+    "Description": "just a stupid way to run a payload",
+    "Link": "https://github.com/NUL0x4C/ToasterLoader",
+    "ReleaseDate": "Aug 15, 2022"
+  },
+  {
+    "Name": "AtomPePacker",
+    "Language": "C",
+    "Stars": 604,
+    "Description": "A Highly capable Pe Packer",
+    "Link": "https://github.com/NUL0x4C/AtomPePacker",
+    "ReleaseDate": "Oct 12, 2022"
+  },
+  {
+    "Name": "KctHijackLib",
+    "Language": "C, C++",
+    "Stars": 8,
+    "Description": "using the kct to run your shellcode the apt style",
+    "Link": "https://github.com/NUL0x4C/KctHijackLib",
+    "ReleaseDate": "Aug 15, 2022"
+  },
+  {
+    "Name": "Ultra",
+    "Language": "C",
+    "Stars": 50,
+    "Description": "A Small Poc On An Encryption/Decryption Algorithm Used As A File Locker",
+    "Link": "https://github.com/NUL0x4C/Ultra",
+    "ReleaseDate": "Nov 9, 2022"
+  },
+  {
+    "Name": "DeleteShadowCopies",
+    "Language": "C++",
+    "Stars": 108,
+    "Description": "Deleting Shadow Copies In Pure C++",
+    "Link": "https://github.com/NUL0x4C/DeleteShadowCopies",
+    "ReleaseDate": "Oct 31, 2022"
+  },
+  {
+    "Name": "Syscallslib",
+    "Language": "C, Assembly",
+    "Stars": 79,
+    "Description": "a library that automates some clean syscalls to make it easier to implement",
+    "Link": "https://github.com/NUL0x4C/Syscallslib",
+    "ReleaseDate": "Sep 20, 2022"
+  },
+  {
+    "Name": "RecycleBinPersistence",
+    "Language": "C",
+    "Stars": 8,
+    "Description": "using the Recycle Bin to insure persistence",
+    "Link": "https://github.com/NUL0x4C/RecycleBinPersistence",
+    "ReleaseDate": "Aug 15, 2022"
+  },
+  {
+    "Name": "T.D.P.",
+    "Language": "C++, C",
+    "Stars": 9,
+    "Description": "Using Thread Description To Hide Shellcodes",
+    "Link": "https://github.com/NUL0x4C/T.D.P.",
+    "ReleaseDate": "Aug 15, 2022"
+  },
+  {
+    "Name": "NoRunPI",
+    "Language": "C",
+    "Stars": 173,
+    "Description": "Run Your Payload Without Running Your Payload",
+    "Link": "https://github.com/NUL0x4C/NoRunPI",
+    "ReleaseDate": "Oct 16, 2022"
+  },
+  {
+    "Name": "ManualRsrcDataFetching",
+    "Language": "C",
+    "Stars": 46,
+    "Description": "Get your data from the resource section manually, with no need for windows apis",
+    "Link": "https://github.com/NUL0x4C/ManualRsrcDataFetching",
+    "ReleaseDate": "Sep 22, 2022"
+  },
+  {
+    "Name": "GP",
+    "Language": "C",
+    "Stars": 34,
+    "Description": "using the gpu to hide your payload",
+    "Link": "https://github.com/NUL0x4C/GP",
+    "ReleaseDate": "Aug 15, 2022"
+  },
+  {
+    "Name": "KnownDllUnhook",
+    "Language": "C",
+    "Stars": 263,
+    "Description": "Replace the .txt section of the current loaded modules from \\KnownDlls\\ to bypass edrs",
+    "Link": "https://github.com/NUL0x4C/KnownDllUnhook",
+    "ReleaseDate": "Sep 27, 2022"
+  }
+]

@@ -9,7 +9,7 @@ import backgroundImg from '../../Images/background1.png'
 import { Repository } from '../../Models/index'
 
 export const RepoCard = (props: Repository) => {
-
+    
     return (
       <div className="repoData">
         <Card variant="outlined" sx={{ width: 320, height: 290, maxHeight: '100%' }}>
@@ -55,6 +55,9 @@ export const RepoCard = (props: Repository) => {
             Numer of ⭐'s {props.Stars.toString()}
           </Typography>
           <Divider orientation="vertical" />
+          <Typography level="body3" sx={{ fontWeight: 'md', color: 'text.secondary' }}>
+            {props.ReleaseDate.toString()}
+          </Typography>
 
         </CardOverflow>
         </Card>

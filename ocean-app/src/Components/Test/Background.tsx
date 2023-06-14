@@ -29,3 +29,4 @@ export const Background = ( { handleSearch }: any) => {
       </div>
     );
   };
+
