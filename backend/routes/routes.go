@@ -17,10 +17,10 @@ import (
 func GetRoutes() http.Handler {
 	router := mux.NewRouter()
 
-	router.HandleFunc("/", testData).Methods("GET")
-	router.HandleFunc("/repositories", getRepositories).Methods("GET")
-	router.HandleFunc("/repositories/{username}", getUsernameRepositories).Methods("GET", "POST")
-	router.HandleFunc("/getRepoGoogle", GetReposGoogle).Methods("GET", "POST")
+	router.HandleFunc("/api/", testData).Methods("GET")
+	router.HandleFunc("/api/repositories", getRepositories).Methods("GET")
+	router.HandleFunc("/api/repositories/{username}", getUsernameRepositories).Methods("GET", "POST")
+	router.HandleFunc("/api/getRepoGoogle", GetReposGoogle).Methods("GET", "POST")
 
 	controller := handlers.CORS(
 		handlers.AllowedOrigins([]string{"*"}),
@@ -55,7 +55,7 @@ func getRepositories(w http.ResponseWriter, r *http.Request) {
 
 	if err != nil {
 		fmt.Println(err)
-		error_resopsne, _ := json.Marshal(map[string]interface{}{
+		error_resopsne, _ := json.Marshal(map[string]string{
 			"Status": "Not OK",
 			"Error":  fmt.Sprintf("Could not found Database: %v", err),
 		})
@@ -96,7 +96,7 @@ func getUsernameRepositories(w http.ResponseWriter, r *http.Request) {
 
 	_, err = util.ScanGithub(username)
 	if err != nil {
-		response, _ := json.Marshal(map[string]interface{}{
+		response, _ := json.Marshal(map[string]string{
 			"Status":  "NOT OK",
 			"Message": fmt.Sprintf("Error %s", err),
 		})

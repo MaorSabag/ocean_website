@@ -1,16 +1,16 @@
 import axios from 'axios'
 import { METHOD } from '../Models/index'
 
-const BACKEND_SERVER = !process.env.NODE_ENV || process.env.NODE_ENV === 'development' ? process.env.REACT_APP_BACKEND_DEV : process.env.REACT_APP_BACKEND_PROD
+//const BACKEND_SERVER = !process.env.NODE_ENV || process.env.NODE_ENV === 'development' ? process.env.REACT_APP_BACKEND_DEV : process.env.REACT_APP_BACKEND_PROD
 
 const sendRequest = async (method: METHOD, routing: string, body?: any) => {
-    const URL = `${BACKEND_SERVER}${routing}`;
+    // const URL = `${BACKEND_SERVER}${routing}`;
     let response: any = null;
   
     switch (method) {
       case METHOD.get:
         response = await axios.get(
-          URL,
+          routing,
           {
             params:body,
             headers: {
@@ -22,7 +22,7 @@ const sendRequest = async (method: METHOD, routing: string, body?: any) => {
         break;
       case METHOD.post:
         response = await axios.post(
-          URL,
+          routing,
           { body: body },
           {headers : {
             'Content-Type': 'applicaiton/json',
@@ -40,7 +40,7 @@ export const getRepos = () => {
     console.log("Sending getDatabase api request..")
     return sendRequest(
         METHOD.get,
-        '/repositories'
+        '/api/repositories'
     )
 }
 
@@ -48,6 +48,6 @@ export const getHome = () => {
     console.log("Sending / api request..")
     return sendRequest(
         METHOD.get,
-        '/'
+        '/api/'
     )
 }

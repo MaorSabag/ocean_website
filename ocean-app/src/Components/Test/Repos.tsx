@@ -66,15 +66,15 @@ export const Repos = () => {
       try {
         setIsLoading(true)  
         const data = await getRepos();
-          console.log("Got in updateDateabase ",data)
-          if (Array.isArray(data)) {
-            setRepositories(data)
-            setFilteredRepositories(data)
-            setIsLoading(false)
-            return
-          }
+        console.log("Got in updateDateabase ",data)
+        if (Array.isArray(data)) {
+          setRepositories(data)
+          setFilteredRepositories(data)
           setIsLoading(false)
-          handleError(data)
+          return
+        }
+        setIsLoading(false)
+        handleError(data)
 
         } catch(error) {
             setIsLoading(false)
