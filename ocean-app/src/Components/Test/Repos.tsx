@@ -120,10 +120,10 @@ export const Repos = () => {
             <Background
               handleSearch={handleSearch}
             />
-          <SortButton
-            sortByDate={filterByDate}
-            sortByStars={filterByStars}
-          />
+            <SortButton
+              sortByDate={filterByDate}
+              sortByStars={filterByStars}
+            />
         </div>
         <div className="repoContainer">
           {isLoading && 

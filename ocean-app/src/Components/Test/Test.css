@@ -53,6 +53,26 @@
   margin-left: 100px;
 }
 
+.sortButtons {
+  float: right;
+  margin-block: calc(20px + 25px - 8px);
+  width: calc(50vw - 400px);
+  text-align: center;
+}
+
+.sortButtons button {
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 7.5px;
+  padding: 7.5px;
+}
+
+
+.sortButtons button:hover {
+  background: #3831be78;
+  color: white;
+}
+
 .topBarContainer {
     background-color: rgba(37, 34, 34, 0.774);
     width: 100%;
