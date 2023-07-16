@@ -32,7 +32,7 @@ func GetRoutes() http.Handler {
 }
 
 func testData(w http.ResponseWriter, r *http.Request) {
-	log.Printf("Got / request from %v\n", r.RemoteAddr)
+	log.Printf("Got /api request from %v\n", r.RemoteAddr)
 
 	test := &models.Repository{
 		Name:        "Maor",
@@ -50,7 +50,7 @@ func testData(w http.ResponseWriter, r *http.Request) {
 }
 
 func getRepositories(w http.ResponseWriter, r *http.Request) {
-	log.Printf("Got /database request from %v\n", r.RemoteAddr)
+	log.Printf("Got /api/repositories request from %v\n", r.RemoteAddr)
 	json_database, err := util.GetDatabaseFile("")
 
 	if err != nil {
@@ -76,7 +76,7 @@ func getRepositories(w http.ResponseWriter, r *http.Request) {
 func getUsernameRepositories(w http.ResponseWriter, r *http.Request) {
 	params := mux.Vars(r)
 	username := params["username"]
-	log.Printf("Got /repositories/%s request from %v", username, r.RemoteAddr)
+	log.Printf("Got /api/repositories/%s request from %v", username, r.RemoteAddr)
 
 	reqBody, _ := ioutil.ReadAll(r.Body)
 
