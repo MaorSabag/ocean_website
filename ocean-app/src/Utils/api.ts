@@ -1,10 +1,7 @@
 import axios from 'axios'
 import { METHOD } from '../Models/index'
 
-//const BACKEND_SERVER = !process.env.NODE_ENV || process.env.NODE_ENV === 'development' ? process.env.REACT_APP_BACKEND_DEV : process.env.REACT_APP_BACKEND_PROD
-
 const sendRequest = async (method: METHOD, routing: string, body?: any) => {
-    // const URL = `${BACKEND_SERVER}${routing}`;
     let response: any = null;
   
     switch (method) {

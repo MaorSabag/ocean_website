@@ -117,13 +117,17 @@ export const Repos = () => {
     return (
       <div>
         <div>
-            <Background
-              handleSearch={handleSearch}
-            />
-            <SortButton
-              sortByDate={filterByDate}
-              sortByStars={filterByStars}
-            />
+            <div>
+              <Background
+                handleSearch={handleSearch}
+              />
+            </div>
+            <div>
+              <SortButton
+                sortByDate={filterByDate}
+                sortByStars={filterByStars}
+              />
+            </div>
         </div>
         <div className="repoContainer">
           {isLoading && 

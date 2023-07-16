@@ -8,7 +8,7 @@
     background-repeat: repeat-y;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,6 +54,7 @@
 }
 
 .sortButtons {
+  position: relative;
   float: right;
   margin-block: calc(20px + 25px - 8px);
   width: calc(50vw - 400px);

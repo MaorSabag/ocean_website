@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MemeGenerator from './Components/MemeGenerator';
 import Home from './Components/Home';
-import AllRepos from './Components/Test';
+import AllRepos from './Components/AllRepos';
 
 const App = () => {
   return (
